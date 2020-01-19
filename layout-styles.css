@@ -41,6 +41,7 @@ a:hover,a:focus {
 }
 
 .top-bar {
+  min-width: 100%;
   height: 60px;
   background: #9bb2ea;
   background: -moz-linear-gradient(top,  #9bb2ea 0%, #c3d0f2 100%);
@@ -56,8 +57,8 @@ a:hover,a:focus {
   filter: none \0/IE9;
 }
 
-.logo {
-    max-height: 25%;
+img {
+    min-width: 100%;
 }
 
 .menu { 
@@ -65,8 +66,68 @@ a:hover,a:focus {
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
-    padding: 20px 10px 10px 10px;
-    vertical-align: middle;
+    padding: 0px 10px 10px 10px;
+    vertical-align: top;
+}
+
+.menu img {
+    min-width: 15%;
+    padding: 0px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+ul, li{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+li{
+	display:inline-block;
+}
+
+li a {
+	padding:10px;
+	display:block;
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#000;
+	position:relative;
+}
+
+li a:after{
+	content:'';
+	width:0%;
+	transition:all 0.3s ease;
+	left:50%;
+}
+
+li a:before{
+	content:'';
+	width:0%;
+	transition:all 0.3s ease;
+	left:50%;
+}
+
+li a:hover:after{
+	content:'';
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	background:#f5824a;
+	height:3px;
+	width:50%;
+}
+
+li a:hover:before{
+	content:'';
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	background:#f5824a;
+	height:3px;
+	width:50%;
 }
 
 .welcome-container {
