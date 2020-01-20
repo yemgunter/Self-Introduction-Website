@@ -36,8 +36,8 @@ a:hover,a:focus {
 
 .wrap {
   min-height: 100%;
-  .display: table;
-  .height: 100%;
+  display: table;
+  height: 100%;
 }
 
 .top-bar {
@@ -99,6 +99,7 @@ li{
 	display:inline-block;
 }
 
+
 li a {
 	padding:10px;
 	display:block;
@@ -143,7 +144,7 @@ li a:hover:before{
 }
 
 
-#main {
+.main {
  max-height: 90%;
  padding: 0px 0px 55px 0px;
 margin: 0px;   
